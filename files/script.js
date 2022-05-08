@@ -1,5 +1,3 @@
-var x = document.getElementsByTagName('body')[0]
-x.style.opacity = 0 
-x.onload = function() {
-    x.style.opacity = 1
-}
+localStorage.setItem("I", "Love you")
+console.log("Зайди в Storage");
+console.log("👉👈")
