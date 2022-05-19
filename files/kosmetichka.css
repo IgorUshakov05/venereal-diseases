@@ -12,7 +12,10 @@
 * {
     margin: 0;
     padding: 0;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .title {
     padding-top: 40px;
@@ -88,7 +91,11 @@ iframe {
 }
 
 .video {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: auto;
 }
@@ -141,6 +148,8 @@ p[title]:hover:after {
             font-size: 15px;
         }
     iframe {
+        width: -webkit-max-content  ;
+        width: -moz-max-content  ;
         width: max-content  ;
         height: auto;
     }
